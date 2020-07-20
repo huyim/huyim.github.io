@@ -1,3 +1,11 @@
+## 目标
+
+完成这个效果的实现： https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade
+
+解决blog评论问题
+
+完成“关于”界面的搭建
+
 ## 日志
 
 2020-07-19
