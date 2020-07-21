@@ -42,6 +42,12 @@ ul.posts li {
     list-style: none;
 }
 
-img {
+img.logo_image {
     width: 5%;
+    margin: 8px;
+}
+
+img.main_image {
+    width: 30%;
+    margin: 5px;
 }
