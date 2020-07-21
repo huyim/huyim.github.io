@@ -42,7 +42,11 @@ ul.posts li {
     list-style: none;
 }
 
-img {
+img.logo_image {
     width: 5%;
     margin: 8px;
+}
+
+img.main_image {
+    margin: 5px;
 }
