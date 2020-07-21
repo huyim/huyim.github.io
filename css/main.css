@@ -48,5 +48,6 @@ img.logo_image {
 }
 
 img.main_image {
+    width: 100%;
     margin: 5px;
 }
