@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "03-Path of Computer Literacy"
-date: 2020-0-03
+date: 2020-08-05
 ---
 
 $ ./ORIGIN_OF_EVERYTHING
@@ -10,8 +10,10 @@ Before I chose the path of a computer science major, I thought programming was a
 In my mind, programmers always sat in front of a screen and were isolated from our beautiful
 natural world. Things changed after I wrote down my first few lines of Python code and first
 program:
+
 > Print(“Hello World!”)
 > Hello World!
+
 Indeed, it really opened a new world for me. I gradually learned how to get input from users,
 write loops, and use control statements. At the end of that quarter, I was able to create a small
 “tic tac toe” game. If a programmer had enough imaginations, he or she could build a “world”
