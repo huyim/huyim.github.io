@@ -13,6 +13,8 @@ bootstrap
 
 将底部文字链接替换成图标链接。
 
+图标来源：https://www.iconfont.cn/
+
 2020-07-19
 
 通过学习Jonathan McGlone (http://jmcglone.com/guides/github-pages/) 的指导完成了初步搭建。 
