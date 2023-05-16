@@ -1,14 +1,8 @@
-## 目标
-
-完成这个效果的实现： https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_fade
-
-解决blog评论问题
-
-完成“关于”界面的搭建
-
-bootstrap
-
 ## 日志
+
+2023-05-17
+启用新模板 -> [Ver2.0](https://github.com/codewithsadee/vcard-personal-portfolio).
+
 2020-07-21
 
 将底部文字链接替换成图标链接。
@@ -17,8 +11,10 @@ bootstrap
 
 2020-07-19
 
-通过学习Jonathan McGlone (http://jmcglone.com/guides/github-pages/) 的指导完成了初步搭建。 
- 
- 2020-05-03
- 
- 首次创建
+初步搭建 -> [Jonathan McGlone's Guide](http://jmcglone.com/guides/github-pages/).
+
+四大模块：主页/Main，关于/About，博客/Blog，影集/Album
+
+2020-05-03
+
+首次创建
