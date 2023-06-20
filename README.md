@@ -1,5 +1,11 @@
 ## 日志
 
+known issues and goals:
+
+email not working
+
+switch lanuages
+
 2023-06-20
 更新主页、Resume、Live 等
 
