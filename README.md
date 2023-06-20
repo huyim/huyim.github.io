@@ -1,5 +1,10 @@
 ## 日志
 
+2023-06-20
+更新主页、Resume 等
+
+[图标](https://ionic.io/ionicons)
+
 2023-05-17
 启用新模板 -> [Ver2.0](https://github.com/codewithsadee/vcard-personal-portfolio).
 
