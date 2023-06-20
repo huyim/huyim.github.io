@@ -1,7 +1,7 @@
 ## 日志
 
 2023-06-20
-更新主页、Resume 等
+更新主页、Resume、Live 等
 
 [图标](https://ionic.io/ionicons)
 

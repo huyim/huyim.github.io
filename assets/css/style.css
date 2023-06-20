@@ -1197,7 +1197,7 @@ main {
 }
 
 /*-----------------------------------*\
-  #CONTACT
+  #CONTACT|LIVE
 \*-----------------------------------*/
 
 .mapbox {
@@ -1218,7 +1218,7 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
+  /* filter: grayscale(1) invert(1); */
 }
 
 .contact-form {
