@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -50,7 +50,8 @@
           <div class="info-content">
             <h1 class="name" title="HU Yiming">胡一鸣</h1>
 
-            <p class="title">Hu Yiming</p>
+            <p class="title" lang="en">Hu Yiming</p>
+            <p class="title" lang="zh">胡一鳴</p>
           </div>
 
           <button class="info_more-btn" data-sidebar-btn>
@@ -70,7 +71,8 @@
               </div>
 
               <div class="contact-info">
-                <p class="contact-title">Email</p>
+                <p class="contact-title" lang="en">Email</p>
+                <p class="contact-title" lang="zh">邮箱</p>
 
                 <a href="huym0625@gmail.com" class="contact-link"
                   >huym0625@gmail.com</a
@@ -80,39 +82,16 @@
 
             <li class="contact-item">
               <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+41792446603" class="contact-link"
-                  >+41 (79)244-6603</a
-                >
-              </div>
-            </li>
-
-            <!-- <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div> -->
-
-            <!-- <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">June 25, 1999</time>
-              </div>
-            </li> -->
-
-            <li class="contact-item">
-              <div class="icon-box">
                 <ion-icon name="location-outline"></ion-icon>
               </div>
 
               <div class="contact-info">
-                <p class="contact-title">Location</p>
+                <p class="contact-title" lang="en">Location</p>
+                <p class="contact-title" lang="zh">位置</p>
 
-                <address>Zurich, Switzerland</address>
+                <address lang="en">Zurich, Switzerland</address>
+                <address lang="zh">瑞士-苏黎世</address>
+
               </div>
             </li>
           </ul>
@@ -145,6 +124,22 @@
             </li>
           </ul>
         </div>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <button id="switch-lang-en" lang-switch class="lang-btn active">English</button>
+          </li>
+
+          <li class="social-item">
+            <span class="lang-btn">|</span>
+          </li>
+
+          <li class="social-item">
+            <button id="switch-lang-zh" lang-switch class="lang-btn">中文</button>
+          </li>
+        </ul>
       </aside>
 
       <!--
@@ -159,23 +154,26 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link active" data-nav-link name="about"><p lang="en">About</p><p lang="zh">关于</p></button>
+
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+              <button class="navbar-link" data-nav-link name="resume"><p lang="en">Resume</p><p lang="zh">简历</p></button>
+
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" data-nav-link name="portfolio"><p lang="en">Portfolio</p><p lang="zh">个人项目</p></button>
             </li>
 
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li> -->
+              <!-- <li class="navbar-item">
+                <button class="navbar-link" data-nav-link>Blog</button>
+              </li> -->
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Journey</button>
+              <button class="navbar-link" data-nav-link name="journey"><p lang="en">Journey</p><p lang="zh">旅程</p></button>
+              <!-- <button class="navbar-link" lang=“zh” data-nav-link name="journey">旅程</button> -->
             </li>
           </ul>
         </nav>
@@ -186,14 +184,19 @@
 
         <article class="about active" data-page="about">
           <header>
-            <h2 class="h2 article-title">About me</h2>
+            <h2 class="h2 article-title" lang="en">About me</h2>
+            <h2 class="h2 article-title" lang="zh">关于我</h2>
+
           </header>
 
           <section class="about-text">
-            <p>
+            <p lang="en">
               I am currently pursuing a Master's degree in People-Oriented
               Computing at the University of Zurich. My areas of interest lie in
               XR industries, AI products, and human-computer interaction (HCI).
+            </p>
+            <p lang="zh">
+              目前在苏黎世大学就读人机交互方向硕士。对于XR、3D应用感兴趣。
             </p>
           </section>
 
@@ -202,7 +205,9 @@
         -->
 
           <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
+            <h3 class="h3 service-title" lang="en">What i'm doing</h3>
+            <h3 class="h3 service-title" lang="zh">正在做什么？</h3>
+
 
             <ul class="service-list">
               <li class="service-item">
@@ -216,67 +221,35 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Thesis</h4>
+                  <h4 class="h4 service-item-title" lang="en">Thesis</h4>
+                  <h4 class="h4 service-item-title" lang="zh">论文</h4>
 
-                  <p class="service-item-text">TOPIC: Human-in-the-Loop Management of Personal and Autobiographical Multimedia</p>
+
+                  <p class="service-item-text" lang="en">TOPIC: Human-in-the-Loop Management of Personal and Autobiographical Multimedia</p>
+                  <p class="service-item-text" lang="zh">探索知识图谱在多媒体存储、管理以及视频剪辑方面的应用</p>
+
                 </div>
+
+                <li class="service-item">
+                  <div class="service-icon-box">
+                    <img
+                      src="./assets/images/icon-dev.svg
+                  "
+                      alt="design icon"
+                      width="40"
+                    />
+                  </div>
+  
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title" lang="en">Port of Avocado</h4>
+                    <h4 class="h4 service-item-title" lang="zh">鳄梨港</h4>
+  
+  
+                    <p class="service-item-text" lang="en">Using Three.js to build a 3D city. </p>
+                    <p class="service-item-text" lang="zh">使用Three.js建造一个3D城市</p>
+                    <a href="https://port-avocado.vercel.app/">Link</a>
+                  </div>
               </li>
-
-              <!-- <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
-                  </p>
-                </div>
-              </li> -->
             </ul>
           </section>
 
@@ -285,7 +258,9 @@
         -->
 
           <section class="testimonials">
-            <h3 class="h3 testimonials-title">My interests</h3>
+            <h3 class="h3 testimonials-title" lang="en">My interests</h3>
+            <h3 class="h3 testimonials-title" lang="zh">一些兴趣</h3>
+
 
             <ul class="testimonials-list has-scrollbar">
               <li class="testimonials-item">
@@ -301,15 +276,26 @@
 
                   <h4
                     class="h4 testimonials-item-title"
+                    lang="en"
                     data-testimonials-title
                   >
                     MR
                   </h4>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    lang="zh"
+                    data-testimonials-title
+                  >
+                    MR 混合现实
+                  </h4>
 
                   <div class="testimonials-text" data-testimonials-text>
-                    <p>
+                    <p lang="en">
                       What kind of magic can be achieved in a 3D space that is
                       hard to attain in 2D?
+                    </p>
+                    <p lang="zh">
+                      3D空间能带来哪些更有趣的应用呢?
                     </p>
                   </div>
                 </div>
@@ -356,8 +342,16 @@
                   <h4
                     class="h4 testimonials-item-title"
                     data-testimonials-title
+                    lang="en"
                   >
                     Hiking
+                  </h4>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                    lang="zh"
+                  >
+                    徒步
                   </h4>
 
                   <div class="testimonials-text" data-testimonials-text>
@@ -367,10 +361,6 @@
               </li>
             </ul>
           </section>
-
-          <!--
-          - testimonials modal
-        -->
 
           <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
@@ -383,7 +373,7 @@
               <div class="modal-img-wrapper">
                 <figure class="modal-avatar-box">
                   <img
-                    src="./assets/images/avatar-1.png"
+                    src="./assets/images/logo.svg"
                     alt="Daniel lewis"
                     width="80"
                     data-modal-img
@@ -395,8 +385,6 @@
 
               <div class="modal-content">
                 <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
 
                 <div data-modal-text>
                   <p>
@@ -412,69 +400,7 @@
             </section>
           </div>
 
-          <!--
-          - clients
-        -->
-
-          <!-- <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-1-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-2-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-3-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-4-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-5-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-6-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section> -->
+          
         </article>
 
         <!--
@@ -483,7 +409,9 @@
 
         <article class="resume" data-page="resume">
           <header>
-            <h2 class="h2 article-title">Resume</h2>
+            <h2 class="h2 article-title" lang="en">Resume</h2>
+            <h2 class="h2 article-title" lang="zh">简历</h2>
+
           </header>
 
           <section class="timeline">
@@ -492,29 +420,46 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Education</h3>
+              <h3 class="h3" lang="en">Education</h3>
+              <h3 class="h3" lang="zh">教育经历</h3>
+
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">&#127464&#127469 University of Zurich</h4>
+                <h4 class="h4 timeline-item-title" lang="en">&#127464&#127469 University of Zurich</h4>
+                <h4 class="h4 timeline-item-title" lang="zh">&#127464&#127469 苏黎世大学</h4>
 
-                <span>Master of Science · 2021 — Present</span>
 
-                <p class="timeline-text">
+                <span lang="en">Master of Science · 2021 — Present</span>
+                <span lang="zh">硕士 · 2021 — 至今</span>
+
+
+                <p class="timeline-text" lang="en">
                   Major: People-Oriented Computing <br />
                   Minor: Information System
+                </p>
+                <p class="timeline-text" lang="zh">
+                  专业：人机交互 <br />
+                  辅修：信息系统
                 </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
+                <h4 class="h4 timeline-item-title" lang="en">
                   &#127482&#127480 University of California, Davis
                 </h4>
+                <h4 class="h4 timeline-item-title" lang="zh">
+                  &#127482&#127480 加州大学戴维斯分校
+                </h4>
 
-                <span>Bachelor of Science · 2017 — 2021</span>
+                <span lang="en">Bachelor of Science · 2017 — 2021</span>
+                <span lang="zh">本科 · 2017 — 2021</span>
 
-                <p class="timeline-text">Major: Computer Science</p>
+
+                <p class="timeline-text" lang="en">Major: Computer Science</p>
+                <p class="timeline-text" lang="zh">专业：计算机科学</p>
+
               </li>
             </ol>
           </section>
@@ -530,16 +475,16 @@
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
+                <h4 class="h4 timeline-item-title" lang="en">
                   Human-Drone Collaborations in Firefighting
                 </h4>
 
-                <span
+                <span lang="en"
                   >IMRG UZH & Fire Department in Silenen and Altdorf · 2022.07 —
                   2023.03</span
                 >
 
-                <p class="timeline-text">
+                <p class="timeline-text" lang="en">
                   This was a group project involving 5 team members focused on
                   studying the interaction of autonomous multi-drones in
                   firefighting scenarios and public opinions. The project
@@ -571,19 +516,21 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Work Experience</h3>
+              <h3 class="h3" lang="en">Work Experience</h3>
+              <h3 class="h3" lang="zh">实习/工作经历</h3>
+
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Tutor</h4>
+                <h4 class="h4 timeline-item-title" lang="en">Tutor</h4>
 
-                <span
+                <span lang="en"
                   >Department of Computer Science · UC Davis · 2019.01 —
                   2019.06</span
                 >
 
-                <p class="timeline-text">
+                <p class="timeline-text" lang="en">
                   - Mentored 10 students to improve their computer literacy<br />
                   - Co-held a 2-hour review session for students to prepare for
                   their final and enhanced the ability to speak publicly <br />
@@ -594,14 +541,14 @@
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Tutor</h4>
+                <h4 class="h4 timeline-item-title" lang="en">Tutor</h4>
 
-                <span
+                <span lang="en"
                   >Department of Plant Science · UC Davis · 2018.04 —
                   2018.06</span
                 >
 
-                <p class="timeline-text">
+                <p class="timeline-text" lang="en">
                   - Trained 40 students to use computer programs like Microsoft
                   Word, Excel, and R studio <br />
                   - Facilitated 2 hr/week office hours for students <br />
@@ -617,16 +564,18 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Research Experience</h3>
+              <h3 class="h3" lang="en">Research Experience</h3>
+              <h3 class="h3" lang="zh">研究经历</h3>
+
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Research Assistant</h4>
+                <h4 class="h4 timeline-item-title" lang="en">Research Assistant</h4>
 
-                <span>Biomedical Center · UC Davis · 2019.07 — 2019.08</span>
+                <span lang="en">Biomedical Center · UC Davis · 2019.07 — 2019.08</span>
 
-                <p class="timeline-text">
+                <p class="timeline-text" lang="en">
                   - Deployed a deep learning network (U-net) using convolutional
                   neural networks to predict the correct position of muscles in
                   a CT image <br />
@@ -646,30 +595,32 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
-              <h3 class="h3">Patents</h3>
+              <h3 class="h3" lang="en">Patents</h3>
+              <h3 class="h3" lang="zh">专利</h3>
+
             </div>
 
             <ol class="timeline-list">
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
+                <h4 class="h4 timeline-item-title" lang="en">
                   National Utility Model Patent Certificate
                 </h4>
 
-                <span>July 2015</span>
+                <span lang="en">July 2015</span>
 
-                <p class="timeline-text">
+                <p class="timeline-text" lang="en">
                   A Vehicle-mounted Box Showing the Car Owner's Phone Number
                 </p>
               </li>
 
               <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
+                <h4 class="h4 timeline-item-title" lang="en">
                   National Utility Model Patent Certificate
                 </h4>
 
-                <span>August 2010</span>
+                <span lang="en">August 2010</span>
 
-                <p class="timeline-text">Teaching-use Sky Lantern</p>
+                <p class="timeline-text" lang="en">Teaching-use Sky Lantern</p>
               </li>
             </ol>
           </section>
@@ -813,10 +764,6 @@
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
                   <button data-select-item>Web development</button>
                 </li>
               </ul>
@@ -957,7 +904,9 @@
 
         <article class="journey" data-page="journey">
           <header>
-            <h2 class="h2 article-title">Journey</h2>
+            <h2 class="h2 article-title" lang="en">Journey</h2>
+            <h2 class="h2 article-title" lang="zh">旅程</h2>
+
           </header>
 
           <section class="mapbox" data-mapbox>
@@ -980,7 +929,9 @@
           </section>
 
           <section class="about-text">
-            <p><em>Memorable moments from the past.</em></p>
+            <p lang="en"><em>Memorable moments from the past.</em></p>
+            <p lang="zh"><em>一些值得记忆的片段。</em></p>
+
             <br />
             <p style="color: var(--orange-yellow-crayola)">
               <em>TIPS</em> <br />
@@ -992,44 +943,6 @@
             </p>
           </section>
 
-          <!-- <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section> -->
         </article>
       </div>
     </main>
@@ -1038,6 +951,8 @@
     - custom js link
   -->
     <script src="./assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/js/lang.js"></script>
 
     <!--
     - ionicon link
